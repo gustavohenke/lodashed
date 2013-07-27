@@ -22,7 +22,7 @@ _.uncapitalize( "I AM MAD!" ); // "i AM MAD!"
 _.uncapitalize( "you're my hero!" ); // "you're my hero!"
 ```
 
-#### `.extendDeep( [object] )` _alias:_ assignDeep
+#### `.extendDeep( [object], ...[object] )` _alias:_ assignDeep
 Deep version of the `_.extend()` function.
 
 ```javascript
@@ -45,10 +45,21 @@ Returns an UUID v4.
 _.uuid(); // => "9279f99f-0525-4079-95a6-3580ef272e71"
 ```
 
-#### __`.byteFormat( bytes[, decimals][, decimalSeparator][, orderSeparator] )`
-Format an byte size, e.g. 1024 becomes 1 KB.
+#### `.byteFormat( bytes[, decimals=0][, decimalSeparator="."][, orderSeparator=","] )`
+Format an byte size, e.g. 1024 becomes 1 KB. You can also customize the output by providing how much `decimals` you want and a `decimalSeparator` and `orderSeparator`.
 
 ```javascript
 _.byteFormat( 1024 ); // => "1 KB"
 _.byteFormat( 1024 * 100 ); // => "100 KB"
 ```
+
+## Tests
+Run the following commands inside the project root:
+
+```shell
+npm install -d
+npm test
+```
+
+## License
+MIT
