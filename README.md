@@ -1,6 +1,6 @@
 # LoDashed [![Build Status](https://travis-ci.org/gustavohenke/lodashed.png)](https://travis-ci.org/gustavohenke/lodashed)
 
-Lo-Dash, Underscore.string + some other useful functions in a powerful _.
+Lo-Dash, Underscore.string + some other useful functions in a single, powerful `_`.
 
 ## The "other" functions
 
@@ -20,13 +20,6 @@ Uncapitalize an string.
 ```javascript
 _.uncapitalize( "I AM MAD!" ); // "i AM MAD!"
 _.uncapitalize( "you're my hero!" ); // "you're my hero!"
-```
-
-#### `.extendDeep( [object], ...[object] )` _alias:_ assignDeep
-Deep version of the `_.extend()` function.
-
-```javascript
-_.extendDeep({ a: { b: true } }, { a: { c: 123 } }); // => { a: { b: true, c: 123 } }
 ```
 
 #### `.replaceAll( str, token, newToken[, ignoreCase])`

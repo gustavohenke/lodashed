@@ -39,40 +39,6 @@
     };
 
     /**
-     * Deeply extend a object.
-     *
-     * @since   0.0.1
-     * @param   {Object} object
-     * @return  {Object}
-     */
-    _my.extendDeep = _my.assignDeep = function( object ) {
-        if ( !_.isObject( object ) ) {
-            return object;
-        }
-
-        var args = _.toArray( arguments ).slice( 1 ), i = 0;
-        function helper( target, src ) {
-            if ( !_.isObject( src ) ) {
-                return;
-            }
-
-            _.forEach( src, function( val, key ) {
-                if ( _.isObject( val ) && _.isObject( target[ key ] ) ) {
-                    helper( target[ key ], val );
-                } else {
-                    target[ key ] = val;
-                }
-            });
-        }
-
-        for ( ; i < args.length; i++ ) {
-            helper( object, args[ i ] );
-        }
-
-        return object;
-    };
-
-    /**
      * @since   0.0.1
      * @param   {String} str
      * @param   {String} token

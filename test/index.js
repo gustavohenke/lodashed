@@ -5,7 +5,7 @@ suite( "Lodashed", function() {
     var _ = require( "../lodashed" );
 
     suite( ".type()", function() {
-        /* jshint evil:true */
+        /* jshint evil: true */
 
         test( "null/undefined", function() {
             expect( _.type( null ) ).to.equal( "null" );
@@ -54,55 +54,6 @@ suite( "Lodashed", function() {
 
     test( ".uncapitalize()", function() {
         expect( _.uncapitalize( "NODE.JS" ) ).to.equal( "nODE.JS" );
-    });
-
-    suite( ".extendDeep()", function() {
-        test( "return 1st arg if not object", function() {
-            expect( _.extendDeep( true ) ).to.equal( true );
-            expect( _.extendDeep( "" ) ).to.equal( "" );
-            expect( _.extendDeep( 1 ) ).to.equal( 1 );
-        });
-
-        test( "recursively extend object", function() {
-            var obj1 = {
-                a: {
-                    b: true,
-                    c: 123,
-                    d: {
-                        e: 456
-                    }
-                },
-                f: "string",
-                g: /\w+/
-            };
-
-            var obj2 = {
-                a: {
-                    c: null,
-                    d: {
-                        e: 789
-                    }
-                },
-                h: "string"
-            };
-
-            var obj3 = {
-                f: false
-            };
-
-            expect( _.extendDeep( obj1, obj2, obj3 ) ).to.deep.equal({
-                a: {
-                    b: true,
-                    c: null,
-                    d: {
-                        e: 789
-                    }
-                },
-                f: false,
-                g: /\w+/,
-                h: "string"
-            });
-        });
     });
 
     suite( ".replaceAll()", function() {
