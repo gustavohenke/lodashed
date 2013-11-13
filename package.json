@@ -1,7 +1,7 @@
 {
     "name": "lodashed",
     "description": "Lo-Dash, Underscore.string + some other useful functions in a single, powerful _",
-    "version": "0.1.0",
+    "version": "0.1.1",
     "main": "./lodashed.js",
     "author": {
         "name": "Gustavo Henke",
@@ -18,7 +18,7 @@
         "node": ">=0.8.0"
     },
     "dependencies": {
-        "lodash": "~2.2.0",
+        "lodash": "~2.3.0",
         "underscore.string": "2.3.3"
     },
     "devDependencies": {
