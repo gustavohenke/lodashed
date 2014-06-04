@@ -50,7 +50,7 @@ _.byteFormat( 1024 * 100 ); // => "100 KB"
 Run the following commands inside the project root:
 
 ```shell
-npm install -d
+npm install
 npm test
 ```
 
