@@ -1,4 +1,6 @@
-# LoDashed [![Build Status](https://travis-ci.org/gustavohenke/lodashed.png)](https://travis-ci.org/gustavohenke/lodashed) [![Dependency Status](https://gemnasium.com/gustavohenke/lodashed.png)](https://gemnasium.com/gustavohenke/lodashed) [![NPM version](https://badge.fury.io/js/lodashed.png)](http://badge.fury.io/js/lodashed)
+# LoDashed
+[![Build Status](http://img.shields.io/travis/gustavohenke/lodashed.svg?style=flat-square)](https://travis-ci.org/gustavohenke/lodashed) [![Dependency Status](http://img.shields.io/david/dev/gustavohenke/lodashed.svg?style=flat-square)](https://gemnasium.com/gustavohenke/lodashed)
+[![NPM version](http://img.shields.io/npm/v/lodashed.svg?style=flat-square)](http://badge.fury.io/js/lodashed)
 
 Lo-Dash, Underscore.string + some other useful functions in a single, powerful `_`.
 
