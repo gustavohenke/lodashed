@@ -7,13 +7,7 @@
         "name": "Gustavo Henke",
         "url":  "https://github.com/gustavohenke"
     },
-    "repository": {
-        "type": "git",
-        "url":  "git://github.com/gustavohenke/lodashed.git"
-    },
-    "bugs": {
-        "url": "https://github.com/gustavohenke/lodashed/issues"
-    },
+    "repository": "gustavohenke/lodashed",
     "engines": {
         "node": ">=0.8.0"
     },
